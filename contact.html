@@ -51,42 +51,32 @@
 
 
         <div class="container">
-        
             <h1 class="topic">Contact</h1>
-        
-            <form class="contactMe">
-                Name:<br>
-                <input type="text" class="form-control" id="inputName" placeholder="Name"><br>
-        
-                Email:<br>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email@example.com">
-                Message:<br>
-                <textarea class="form-control" rows="9" placeholder="Message..."></textarea>
-        
-                <input type="submit" value="Submit">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter Name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email@example.com" name="email">
+                </div>
+                <div>
+                    <label for="msg">Message:</label>
+                    <textarea class="form-control" rows="9" id="inputMessage" placeholder="Message..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
             </form>
-            <!-- <div class="core">
-                <h1 class="topic">Contact</h1>
-
-                <form class="contactMe">
-                    Name:<br>
-                    <input type="text" name="Name" placeholder="Name"><br><br>
-
-                    Email:<br>
-                    <input type="email" name="Email" placeholder="Email@example.com"><br><br>
-
-                    Message:<br>
-                    <textarea class="form-control" rows="12" placeholder="Message..."></textarea><br><br><br>
-
-                    <input type="submit" value="Submit">
-                </form>   
-
-            </div> -->
         </div>
-
-        <footer>
-                Copyright &copy;
-        </footer>
+        <div class="container">
+            <div class="row">
+                <div class="panel-footer">
+                    Copyright &copy;
+                </div>
+            </div>
+        </div>
     </body>
 
 </html>
